@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".showbills">
+
+    <ImageView
+        android:layout_width="184dp"
+        android:layout_height="148dp"
+        android:src="@drawable/invoice"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/tvbills"
+        android:textSize="25dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:id="@+id/spmonth"
+        android:layout_marginTop="25dp"
+        android:entries="@array/Month"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdusd"
+            android:text="USD" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdlbp"
+            android:text="LBP"/>
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Submit"
+        android:onClick="btnsubmit"
+        android:layout_marginTop="15dp"/>
+    <ImageButton
+        android:id="@+id/btnexit"
+        android:layout_width="80dp"
+        android:layout_height="79dp"
+        android:layout_marginLeft="310dp"
+        android:src="@drawable/close"
+        android:text="Close" />
+
+    <ListView
+        android:id="@+id/subscriberlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>
+
+
